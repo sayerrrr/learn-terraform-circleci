@@ -1,11 +1,14 @@
 terraform {
   required_providers {
     aws = {
-      source  = "hashicorp/aws"
-      version = "3.22.0"
+      source = "hashicorp/aws"
     }
   }
-  required_version = "~> 0.14"
+  backend "s3" {
+    bucket = "20e17819-4d9f-1b7a-c2d2-d28fc9f4e33c-backend"
+    key    = "terraform/webapp/terraform.tfstate"
+    region = "us-east-2"
+  }
 }
 
 provider "aws" {

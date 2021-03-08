@@ -1,4 +1,4 @@
-region = "us-east-1"
-user = "circleci-user"
-label = "hashicorp.fun"
-app = "terramino"
+region = "us-east-2"
+user = "sayertindall"
+label = "learncircleci"
+app = "sayertindall_web"
